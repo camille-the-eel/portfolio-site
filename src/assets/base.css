@@ -1,0 +1,29 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-text: #363434;
+  --color-accent-dark: #363434;
+  --color-accent-medium-dark: #7b7b7b;
+  --color-accent-medium-light: #999898;
+  --color-accent-light: #d8d8d8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  color: var(--color-text);
+  line-height: 1.6;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  /* text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
