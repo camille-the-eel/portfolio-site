@@ -1,0 +1,112 @@
+nav {
+  background-color: #fff;
+  padding-right: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.circle {
+  background-color: var(--color-accent-dark);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  background-color: white;
+  text-decoration: none;
+}
+
+a:active.circle,
+a:visited.circle {
+  color: var(--color-text);
+}
+
+a:link.circle,
+a:hover.circle {
+  color: var(--color-accent-light);
+  cursor: pointer;
+}
+
+/* a:link.nav-item, */
+a:visited.nav-item {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+a.router-link-active,
+a:hover.nav-item {
+  font-weight: 800;
+  font-style: normal;
+}
+
+.dropdown-container > li:hover {
+  font-weight: 800;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.dropdown-container > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.dropdown-icon {
+  width: 20px;
+}
+
+.dropdown-container > li > ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  right: -30px;
+}
+
+.dropdown-menu {
+  width: 100px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
