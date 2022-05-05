@@ -38,3 +38,21 @@ a:visited {
   box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px 2px;
   border-radius: 10%;
 } */
+
+@keyframes rotation-forward {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation-backward {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

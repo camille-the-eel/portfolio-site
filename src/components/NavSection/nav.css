@@ -92,7 +92,7 @@ a:hover.nav-item {
   z-index: 1;
   position: absolute;
   top: 10px;
-  right: -40px;
+  right: -50px;
 }
 
 .dropdown-menu {
@@ -129,16 +129,17 @@ ul li ul li {
   width: 100%;
 }
 
-.about {
+.nav-about {
   width: 60px;
 }
 
 @media (min-width: 400px) {
   .nav-item,
-  .work {
+  .nav-work {
     font-size: 18px;
   }
-  .about {
+  .nav-about {
     width: 70px;
+    max-height: 30px;
   }
 }

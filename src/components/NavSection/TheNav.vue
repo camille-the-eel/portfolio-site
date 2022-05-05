@@ -1,15 +1,17 @@
 <script setup>
 import { RouterLink } from "vue-router";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
+import NavAccentCircle from "./NavAccentCircle.vue";
 </script>
 
 <template>
+  <NavAccentCircle />
   <header>
     <nav>
       <RouterLink to="/" class="circle"><span>H</span></RouterLink>
       <div class="nav-link-container">
         <ul class="dropdown-container">
-          <li class="work">
+          <li class="nav-work">
             WORK<ChevronDownIcon class="dropdown-icon" />
             <ul class="dropdown-menu">
               <li>
@@ -25,7 +27,7 @@ import { ChevronDownIcon } from "@heroicons/vue/solid";
             </ul>
           </li>
         </ul>
-        <RouterLink to="/about" class="nav-item about">ABOUT</RouterLink>
+        <RouterLink to="/about" class="nav-item nav-about">ABOUT</RouterLink>
       </div>
     </nav>
   </header>
