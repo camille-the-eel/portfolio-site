@@ -1,4 +1,12 @@
 nav {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.nav-link-container {
   background-color: #fff;
   padding-right: 20px;
   height: 60px;
@@ -6,7 +14,6 @@ nav {
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
-  position: relative;
 }
 
 .circle {
@@ -27,8 +34,8 @@ nav {
 }
 
 .nav-item {
-  background-color: white;
   text-decoration: none;
+  background-color: #fff;
 }
 
 a:active.circle,
@@ -56,6 +63,11 @@ a:hover.nav-item {
   font-style: normal;
 }
 
+.dropdown-container {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
 .dropdown-container > li:hover {
   font-weight: 800;
   font-style: normal;
@@ -80,11 +92,17 @@ a:hover.nav-item {
   z-index: 1;
   position: absolute;
   top: 10px;
-  right: -30px;
+  right: -40px;
 }
 
 .dropdown-menu {
-  width: 100px;
+  width: 120px;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 li:hover {
@@ -109,4 +127,18 @@ ul li ul:hover {
 ul li ul li {
   clear: both;
   width: 100%;
+}
+
+.about {
+  width: 60px;
+}
+
+@media (min-width: 400px) {
+  .nav-item,
+  .work {
+    font-size: 18px;
+  }
+  .about {
+    width: 70px;
+  }
 }

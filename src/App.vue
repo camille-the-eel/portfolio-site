@@ -6,18 +6,16 @@ import TheFooter from "@/components/FooterSection/TheFooter.vue";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <TheNav />
-      <!-- <HelloWorld msg="You did it!" /> -->
-    </div>
-  </header>
-  <RouterView />
-  <TheFooter />
+  <TheNav />
+  <div class="flex-wrapper">
+    <!-- <HelloWorld msg="You did it!" /> -->
+    <RouterView />
+    <TheFooter />
+  </div>
 </template>
 
 <style>
 @import "@/assets/reset.css";
 @import "@/assets/base.css";
-/* @import "@/assets/main.css"; */
+@import "@/assets/main.css";
 </style>
