@@ -17,6 +17,7 @@
         <div class="dashed-line"></div>
         <h1>CONTACT</h1>
         <p class="email">HUGHES.CAMILLE.M@GMAIL.COM</p>
+        <p class="email-xs hidden">HUGHES.CAMILLE.M<br />@GMAIL.COM</p>
         <!-- <p class="copyright">CH &#169;2022</p> -->
       </div>
       <div class="background-circle"></div>

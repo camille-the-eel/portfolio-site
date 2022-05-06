@@ -56,7 +56,8 @@
     width: 200px;
   }
   .nav-circle-flex-container {
-    left: 40px;
+    top: -70px;
+    left: 60px;
   }
 }
 

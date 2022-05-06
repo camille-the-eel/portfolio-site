@@ -2,6 +2,10 @@ footer {
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 .social-links-container {
   background-color: #fff;
   max-width: 275px;
@@ -87,6 +91,30 @@ footer {
 
 .copyright {
   font-size: 10px;
+}
+
+@media (min-width: 50px) and (max-width: 299px) {
+  .social-links-container {
+    max-width: 160px;
+    margin: 0px auto 40px auto;
+    column-gap: 6px;
+  }
+
+  .social-icon {
+    width: 60px;
+  }
+
+  .social-links-container > a {
+    padding: 2px;
+  }
+
+  .contact-info > h1 {
+    font-size: 26px;
+  }
+
+  .email-xs {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 349px) {

@@ -28,6 +28,11 @@ body {
   -moz-osx-font-smoothing: grayscale; */
 }
 
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
