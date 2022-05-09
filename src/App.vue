@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-// import HelloWorld from "@/components/HelloWorld.vue";
 import TheNav from "@/components/NavSection/TheNav.vue";
 import TheFooter from "@/components/FooterSection/TheFooter.vue";
 </script>
@@ -8,7 +7,6 @@ import TheFooter from "@/components/FooterSection/TheFooter.vue";
 <template>
   <TheNav />
   <div class="flex-wrapper">
-    <!-- <HelloWorld msg="You did it!" /> -->
     <RouterView />
     <TheFooter />
   </div>
@@ -17,5 +15,5 @@ import TheFooter from "@/components/FooterSection/TheFooter.vue";
 <style>
 @import "@/assets/reset.css";
 @import "@/assets/base.css";
-@import "@/assets/main.css";
+@import "@/assets/app.css";
 </style>

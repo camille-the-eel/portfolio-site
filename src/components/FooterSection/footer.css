@@ -2,7 +2,7 @@ footer {
   position: relative;
 }
 
-.hidden {
+.email-xs {
   display: none;
 }
 
@@ -12,13 +12,13 @@ footer {
   margin: 0px auto 40px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 12px;
+  column-gap: 10px;
   place-content: center;
   place-items: center;
 }
 
 .social-icon {
-  width: 80px;
+  width: 70px;
 }
 
 .social-links-container > a {
@@ -35,7 +35,7 @@ footer {
 }
 
 .background-circle-wrapper {
-  height: 33vh;
+  height: 38vh;
   position: relative;
   overflow: hidden;
 }
@@ -71,9 +71,9 @@ footer {
   background: repeating-linear-gradient(
     to right,
     var(--color-accent-medium-dark) 0,
-    var(--color-accent-medium-dark) 14px,
-    transparent 14px,
-    transparent 22px
+    var(--color-accent-medium-dark) 10px,
+    transparent 12px,
+    transparent 20px
   );
 }
 
@@ -91,6 +91,17 @@ footer {
 
 .copyright {
   font-size: 10px;
+}
+
+@media (min-width: 50px) and (max-width: 249px) {
+  .email-xs {
+    display: inline;
+    font-size: 14px;
+  }
+
+  .email {
+    display: none !important;
+  }
 }
 
 @media (min-width: 50px) and (max-width: 299px) {
@@ -111,10 +122,6 @@ footer {
   .contact-info > h1 {
     font-size: 26px;
   }
-
-  .email-xs {
-    font-size: 14px;
-  }
 }
 
 @media (min-width: 300px) and (max-width: 349px) {
@@ -134,7 +141,7 @@ footer {
     position: absolute;
     z-index: 1;
     padding: 0 25px;
-    top: 95px;
+    top: 92px;
     left: 40px;
     gap: 30px;
   }

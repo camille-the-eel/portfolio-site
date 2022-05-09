@@ -5,6 +5,7 @@ import NavAccentCircle from "./NavAccentCircle.vue";
 </script>
 
 <template>
+  <!-- BUG "H" Home indicator needs to be aware of component conditional rendering and display based on "Home page false" -->
   <NavAccentCircle />
   <header>
     <nav>

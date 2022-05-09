@@ -9,3 +9,5 @@ import TheResume from "@/components/ResumeSection/TheResume.vue";
     <TheResume />
   </main>
 </template>
+
+<style></style>
