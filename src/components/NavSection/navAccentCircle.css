@@ -1,0 +1,36 @@
+.navAccent .circle-outmost {
+  display: none;
+}
+
+.navAccent .circle-bounding-box {
+  position: absolute;
+  height: 150px;
+  width: 40vw;
+  right: 0px;
+  top: 0px;
+}
+
+.navAccent .circle-flex-container {
+  position: absolute;
+  top: -60px;
+  left: 10vw;
+}
+
+@media (min-width: 250px) and (max-width: 599px) {
+  .navAccent .circle-bounding-box {
+    width: 200px;
+  }
+  .navAccent .circle-flex-container {
+    top: -70px;
+    left: 60px;
+  }
+}
+
+@media (min-width: 800px) {
+  .navAccent .circle-bounding-box {
+    width: 320px;
+  }
+  .navAccent .circle-flex-container {
+    left: 80px;
+  }
+}

@@ -1,12 +1,12 @@
 <script setup>
 import { RouterLink } from "vue-router";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
-import NavAccentCircle from "./NavAccentCircle.vue";
+import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
 </script>
 
 <template>
   <!-- BUG "H" Home indicator needs to be aware of component conditional rendering and display based on "Home page false" -->
-  <NavAccentCircle />
+  <AccentCircle class="navAccent" />
   <header>
     <nav>
       <RouterLink to="/" class="circle"><span>H</span></RouterLink>

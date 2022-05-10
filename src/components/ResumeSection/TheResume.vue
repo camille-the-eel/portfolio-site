@@ -3,7 +3,9 @@
 <template>
   <div class="resume-accent-container">
     <div class="resume-accent-grid-container">
-      <h1 class="item-0">RESUME</h1>
+      <a href="" class="item-0">
+        <h1>RESUME</h1>
+      </a>
       <div class="resume-accent-item item-1"></div>
       <div class="resume-accent-item item-2"></div>
       <div class="resume-accent-item item-3"></div>

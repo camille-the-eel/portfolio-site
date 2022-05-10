@@ -77,10 +77,6 @@ footer {
   );
 }
 
-.contact-info > h1 {
-  font-size: 32px;
-  margin: 0;
-}
 .contact-info > p {
   grid-column: 1 / span 2;
 }
@@ -117,10 +113,6 @@ footer {
 
   .social-links-container > a {
     padding: 2px;
-  }
-
-  .contact-info > h1 {
-    font-size: 26px;
   }
 }
 

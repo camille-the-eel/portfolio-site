@@ -30,7 +30,24 @@ body {
 
 h1 {
   font-size: 32px;
+  line-height: 140%;
   margin: 0;
+}
+
+h6 {
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media (min-width: 50px) and (max-width: 249px) {
+  h1 {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  h6 {
+    font-size: 12px;
+  }
 }
 
 a:link,

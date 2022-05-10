@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <footer>
     <div class="social-links-container">
@@ -16,8 +14,8 @@
       <div class="contact-info">
         <div class="dashed-line"></div>
         <h1>CONTACT</h1>
-        <p class="email">HUGHES.CAMILLE.M@GMAIL.COM</p>
-        <p class="email-xs">HUGHES.CAMILLE.M<br />@GMAIL.COM</p>
+        <p class="email">hughes.camille.m@gmail.com</p>
+        <p class="email-xs">hughes.camille.m<br />@gmail.com</p>
         <!-- <p class="copyright">CH &#169;2022</p> -->
       </div>
       <div class="background-circle"></div>
