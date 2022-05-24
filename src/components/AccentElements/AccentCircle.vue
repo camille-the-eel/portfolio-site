@@ -46,7 +46,7 @@ export default {
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%237B7B7BFF' stroke-width='2' stroke-dasharray='2%25%2c 5%25' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 50%;
   grid-area: box;
-  width: 140px;
+  width: 14rem;
   aspect-ratio: 1 / 1;
 }
 
@@ -54,7 +54,7 @@ export default {
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%237B7B7BFF' stroke-width='2' stroke-dasharray='2%25%2c 5%25' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 50%;
   grid-area: box;
-  width: 160px;
+  width: 16rem;
   aspect-ratio: 1 / 1;
 }
 
@@ -62,7 +62,7 @@ export default {
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%237B7B7BFF' stroke-width='2' stroke-dasharray='2%25%2c 5%25' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 50%;
   grid-area: box;
-  width: 180px;
+  width: 18rem;
   aspect-ratio: 1 / 1;
 }
 

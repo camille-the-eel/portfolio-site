@@ -30,18 +30,18 @@ export default {
 
 <style scoped>
 .hero-header-link-box {
-  padding: 32px 0 40px 20px;
+  padding: 3.2rem 0 4rem 2rem;
 }
 
 .plus-icon {
-  width: 20px;
-  margin: 15px 0 30px 0;
+  width: 2rem;
+  margin: 1.5rem 0 3rem 0;
   fill: var(--color-accent-medium-dark);
 }
 
 .bottom-accent {
   width: 100%;
-  height: 12px;
+  height: 1.2rem;
   background-color: var(--color-accent-medium-dark);
 }
 
@@ -56,27 +56,27 @@ export default {
 
 .light.hero-header-box {
   background-color: none;
-  border-top: solid 2px var(--color-accent-dark);
-  border-bottom: solid 2px var(--color-accent-dark);
+  border-top: solid 0.2rem var(--color-accent-dark);
+  border-bottom: solid 0.2rem var(--color-accent-dark);
 }
 
-@media (min-width: 500px) and (max-width: 774px) {
+@media (min-width: 31em) and (max-width: 48em) {
   .hero-header-link-box {
-    padding: 32px 0 80px 40px;
+    padding: 2em 0 5em 2.5em;
   }
 
   .light.hero-header-box {
-    border-right: solid 2px var(--color-accent-dark);
+    border-right: solid 0.125em var(--color-accent-dark);
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 49em) {
   .hero-header-link-box {
-    padding: 50px 0 140px 50px;
+    padding: 3em 0 8.75em 3em;
   }
 
   .light.hero-header-box {
-    border-right: solid 2px var(--color-accent-dark);
+    border-right: solid 0.125em var(--color-accent-dark);
   }
 }
 </style>

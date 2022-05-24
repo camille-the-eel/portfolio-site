@@ -5,12 +5,14 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
 </script>
 
 <template>
+  <!-- TODO: 250px and below > hamburger menu -->
   <!-- BUG "H" Home indicator needs to be aware of component conditional rendering and display based on "Home page false" -->
   <AccentCircle class="navAccent" />
   <header>
     <nav>
       <RouterLink to="/" class="circle"><span>H</span></RouterLink>
       <div class="nav-link-container">
+        <!-- BUG dropdown menu should close on click -->
         <ul class="dropdown-container">
           <li class="nav-work">
             WORK<ChevronDownIcon class="dropdown-icon" />

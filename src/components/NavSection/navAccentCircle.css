@@ -4,33 +4,33 @@
 
 .navAccent .circle-bounding-box {
   position: absolute;
-  height: 150px;
+  height: 15rem;
   width: 40vw;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
 }
 
 .navAccent .circle-flex-container {
   position: absolute;
-  top: -60px;
+  top: -6rem;
   left: 10vw;
 }
 
-@media (min-width: 250px) and (max-width: 599px) {
+@media (min-width: 16em) and (max-width: 37em) {
   .navAccent .circle-bounding-box {
-    width: 200px;
+    width: 12.5em;
   }
   .navAccent .circle-flex-container {
-    top: -70px;
-    left: 60px;
+    top: -4.4em;
+    left: 3.75em;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50em) {
   .navAccent .circle-bounding-box {
-    width: 320px;
+    width: 20em;
   }
   .navAccent .circle-flex-container {
-    left: 80px;
+    left: 5em;
   }
 }

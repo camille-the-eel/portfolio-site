@@ -13,7 +13,7 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
         <HeroHeader
           class="dark"
           href="/development"
-          subHeader="JAVASCRIPT, CSS, VUE, APIs, GIT"
+          subHeader="JAVASCRIPT, VUE, HTML, CSS, APIs"
           mainHeaderLine1="WEB"
           mainHeaderLine2="DEVELOPMENT"
         />
@@ -38,10 +38,9 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
 }
 
 .hero-title {
-  max-width: 400px;
-  /* max-width: 285px; */
+  max-width: 40rem;
   font-weight: 300;
-  margin-bottom: 70px;
+  margin-bottom: 7rem;
   margin-left: 6vw;
   margin-top: 2vh;
 }
@@ -50,7 +49,7 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
   display: grid;
   grid-template-columns: 1fr 3fr 1.5fr;
   grid-template-rows: repeat(2, min-content);
-  gap: 30px 10px;
+  gap: 3rem 1rem;
   margin-bottom: 10vh;
   overflow: hidden;
 }
@@ -59,7 +58,7 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
   grid-column: 1 / -1;
 }
 
-@media (min-width: 500px) and (max-width: 774px) {
+@media (min-width: 31em) and (max-width: 48em) {
   .heroAccent {
     display: block;
   }
@@ -73,11 +72,11 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 49em) {
   .hero-header-container {
-    grid-template-columns: 2fr 50px 3fr;
+    grid-template-columns: 2fr 3.125em 3fr;
     grid-template-rows: 1.5fr 1fr 1.75fr;
-    gap: 30px 10px;
+    gap: 1.8em 0.6em;
     margin-bottom: 10vh;
   }
 

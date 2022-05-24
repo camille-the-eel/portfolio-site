@@ -5,6 +5,7 @@ import TheResume from "@/components/ResumeSection/TheResume.vue";
 
 <template>
   <main>
+    <!-- TODO: desktop vertical rules and tablet rule accent -->
     <TheHero />
     <TheResume />
   </main>

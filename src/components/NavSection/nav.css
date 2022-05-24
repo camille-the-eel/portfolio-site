@@ -1,5 +1,5 @@
 nav {
-  height: 60px;
+  height: 6rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -8,26 +8,26 @@ nav {
 
 .nav-link-container {
   background-color: #fff;
-  padding-right: 20px;
-  height: 60px;
+  padding-right: 2rem;
+  height: 6rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .circle {
   background-color: var(--color-accent-dark);
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   aspect-ratio: 1/1;
   position: absolute;
   top: 3vh;
   left: 3vh;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +52,7 @@ a:hover.circle {
 /* a:link.nav-item, */
 a:visited.nav-item {
   color: var(--color-text);
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -65,7 +65,7 @@ a:hover.nav-item {
 
 .dropdown-container {
   margin: 0;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 1rem;
 }
 
 .dropdown-container > li:hover {
@@ -82,7 +82,7 @@ a:hover.nav-item {
 }
 
 .dropdown-icon {
-  width: 20px;
+  width: 2rem;
 }
 
 .dropdown-container > li > ul {
@@ -91,21 +91,23 @@ a:hover.nav-item {
   list-style: none;
   z-index: 1;
   position: absolute;
-  top: 10px;
-  right: -50px;
+  top: 1rem;
+  right: -5rem;
 }
 
 .dropdown-menu {
-  width: 120px;
+  width: 12rem;
 }
 
 li {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   font-style: italic;
+  transition-duration: 0.5s;
 }
 
-li:hover {
+li:hover,
+li:focus-within {
   cursor: pointer;
 }
 
@@ -118,7 +120,9 @@ ul li ul {
 }
 
 ul li:hover > ul,
-ul li ul:hover {
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
   visibility: visible;
   opacity: 1;
   display: block;
@@ -130,16 +134,16 @@ ul li ul li {
 }
 
 .nav-about {
-  width: 60px;
+  width: 6rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 25em) {
   .nav-item,
   .nav-work {
-    font-size: 18px;
+    font-size: 1.125em;
   }
   .nav-about {
-    width: 70px;
-    max-height: 30px;
+    width: 4.4em;
+    max-height: 1.875em;
   }
 }
