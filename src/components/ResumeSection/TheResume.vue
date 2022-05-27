@@ -1,10 +1,10 @@
-<script setup></script>
-
 <template>
   <div class="resume-accent-container">
     <div class="resume-accent-grid-container">
+      <!-- <a href="" :class="[customClass, 'item-0']"> -->
       <a href="" class="item-0">
         <h1>RESUME</h1>
+        <div :class="customClass"></div>
       </a>
       <div class="resume-accent-item item-1"></div>
       <div class="resume-accent-item item-2"></div>
@@ -16,6 +16,15 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "TheResume",
+  props: {
+    customClass: String,
+  },
+};
+</script>
 
 <style scoped>
 @import "@/components/ResumeSection/resume.css";

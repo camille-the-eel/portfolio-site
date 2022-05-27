@@ -57,7 +57,7 @@ footer {
   text-align: right;
   color: #fff;
   top: 8.5rem;
-  right: 2rem;
+  right: 4rem;
   display: grid;
   align-items: center;
   justify-items: stretch;
@@ -71,9 +71,9 @@ footer {
   background: repeating-linear-gradient(
     to right,
     var(--color-accent-medium-dark) 0,
-    var(--color-accent-medium-dark) 1rem,
+    var(--color-accent-medium-dark) 1.2rem,
     transparent 1.2rem,
-    transparent 2rem
+    transparent 2.2rem
   );
 }
 
@@ -89,7 +89,7 @@ footer {
   font-size: 1rem;
 }
 
-@media (min-width: 3em) and (max-width: 15em) {
+@media (min-width: 0) and (max-width: 15em) {
   .email-xs {
     display: inline;
     font-size: 0.875em;
@@ -116,7 +116,7 @@ footer {
   }
 }
 
-@media (min-width: 20em) and (max-width: 22em) {
+@media (min-width: 20em) and (max-width: 22.9em) {
   .email {
     font-size: 1rem;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div :class="(customClass, 'hero-header-box')">
+  <div :class="[customClass, 'hero-header-box']">
     <div class="hero-header-link-box">
       <a :href="href" class="hero-header-link">
         <h6>{{ subHeader }}</h6>
@@ -33,6 +33,10 @@ export default {
   padding: 3.2rem 0 4rem 2rem;
 }
 
+h6 {
+  padding-right: 30px;
+}
+
 .plus-icon {
   width: 2rem;
   margin: 1.5rem 0 3rem 0;
@@ -60,7 +64,7 @@ export default {
   border-bottom: solid 0.2rem var(--color-accent-dark);
 }
 
-@media (min-width: 31em) and (max-width: 48em) {
+@media (min-width: 31em) and (max-width: 48.999999em) {
   .hero-header-link-box {
     padding: 2em 0 5em 2.5em;
   }

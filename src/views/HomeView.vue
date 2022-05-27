@@ -7,7 +7,7 @@ import TheResume from "@/components/ResumeSection/TheResume.vue";
   <main>
     <!-- TODO: desktop vertical rules and tablet rule accent -->
     <TheHero />
-    <TheResume />
+    <TheResume customClass="homepage-rule" />
   </main>
 </template>
 

@@ -20,6 +20,7 @@ export default {
 </script>
 
 <style scoped>
+/* NAV USE CASE CSS */
 @import "@/components/NavSection/navAccentCircle.css";
 
 .heroAccent .circle-bounding-box {

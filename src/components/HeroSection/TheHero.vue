@@ -1,6 +1,7 @@
 <script setup>
 import HeroHeader from "@/components/HeroSection/HeroHeader.vue";
 import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
+import AccentRules from "@/components/AccentElements/AccentRules.vue";
 </script>
 
 <template>
@@ -8,7 +9,9 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
     <h1 class="hero-title">
       CAMILLE HUGHES IS A JAVASCRIPT DEVELOPER & GRAPHIC DESIGNER
     </h1>
+    <div class="hero-desktop-rule"></div>
     <div class="hero-header-container">
+      <AccentRules class="accent-rules-component" />
       <div class="hero-header-wrapper main-item-0">
         <HeroHeader
           class="dark"
@@ -37,12 +40,17 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
   display: none;
 }
 
+.accent-rules-component {
+  display: none;
+}
+
 .hero-title {
   max-width: 40rem;
   font-weight: 300;
   margin-bottom: 7rem;
   margin-left: 6vw;
   margin-top: 2vh;
+  margin-right: 4rem;
 }
 
 .hero-header-container {
@@ -58,9 +66,18 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
   grid-column: 1 / -1;
 }
 
-@media (min-width: 31em) and (max-width: 48em) {
+@media (min-width: 31em) and (max-width: 48.9999999em) {
   .heroAccent {
     display: block;
+  }
+  .accent-rules-component {
+    place-self: end;
+    display: grid;
+    margin-bottom: 1em;
+  }
+
+  .hero-header-container {
+    grid-template-columns: 1.25fr 3fr 1.75fr;
   }
 
   .main-item-0 {
@@ -80,10 +97,6 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
     margin-bottom: 10vh;
   }
 
-  /* .heroAccent {
-    display: block;
-  } */
-
   .main-item-0 {
     grid-column: 3 / -1;
     grid-row: 1 / -2;
@@ -92,6 +105,29 @@ import AccentCircle from "@/components/AccentElements/AccentCircle.vue";
   .main-item-1 {
     grid-column: 1 / 2;
     grid-row: 2 / -1;
+  }
+}
+
+/* ------------------------------ */
+/* Home Page Rule Accent – Desktop Only  */
+/* --------------------------- */
+@media (min-width: 49em) {
+  .hero-header-container {
+    position: relative;
+  }
+  .hero-desktop-rule {
+    position: absolute;
+    left: 10vw;
+    top: 9em;
+    height: 20em;
+    width: 0.09em;
+    background: repeating-linear-gradient(
+      to top,
+      var(--color-accent-medium-dark) 0,
+      var(--color-accent-medium-dark) 0.625em,
+      transparent 0.75em,
+      transparent 1.25em
+    );
   }
 }
 </style>

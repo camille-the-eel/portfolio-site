@@ -33,14 +33,14 @@
 }
 
 /* 0px and 324px */
-@media (min-width: 0em) and (max-width: 20.25em) {
+@media (min-width: 0em) and (max-width: 18em) {
   .about-header > h1 {
     font-size: 1.625em;
   }
 }
 
-/* GRID SET UP FOR ALL SCREENS LARGER THAN 324PX -- NO MAX-WIDTH BOUNDARY FOR THESE SETTINGS  */
-@media (min-width: 20em) {
+/* GRID SET UP FOR ALL SCREENS LARGER THAN 384PX -- NO MAX-WIDTH BOUNDARY FOR THESE SETTINGS  */
+@media (min-width: 24em) {
   .about-container {
     /* overflow: hidden; */
     text-align: left;
@@ -82,8 +82,8 @@
   .dashed-line {
     display: block;
     margin: 0 50%;
-    height: 120%;
-    max-height: 18.75em;
+    height: 130%;
+    max-height: 22em;
     grid-area: overlay;
     z-index: -99;
 
@@ -98,7 +98,7 @@
   }
 }
 
-@media (min-width: 21em) and (max-width: 25em) {
+@media (min-width: 24em) and (max-width: 25.9999em) {
   .avatar-img {
     max-width: 90%;
   }
@@ -111,10 +111,6 @@
   .about-content {
     width: 100%;
   }
-
-  .dashed-line {
-    height: 60%;
-  }
 }
 
 @media (min-width: 26em) and (max-width: 33em) {
@@ -125,14 +121,10 @@
   .avatar-img {
     max-width: 90%;
   }
-
-  .dashed-line {
-    height: 90%;
-  }
 }
 
 /* GRID SET UP FOR ALL SCREENS LARGER THAN 724PX -- NO MAX-WIDTH BOUNDARY FOR THESE SETTINGS  */
-@media (min-width: 45em) {
+@media (min-width: 44.9999em) {
   .about-container {
     width: 80%;
     grid-template-columns: 1.5fr 2fr 1fr;
@@ -145,7 +137,7 @@
   }
 }
 
-@media (min-width: 45em) and (max-width: 87em) {
+@media (min-width: 45em) and (max-width: 87.9999em) {
   .avatar-img {
     margin-bottom: 3.125em;
   }
