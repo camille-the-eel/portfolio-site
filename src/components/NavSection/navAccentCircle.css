@@ -2,6 +2,7 @@
   display: none;
 }
 
+/* contains overflow */
 .navAccent .circle-bounding-box {
   position: absolute;
   height: 15rem;
@@ -10,6 +11,7 @@
   top: 0;
 }
 
+/* accent positioning */
 .navAccent .circle-flex-container {
   position: absolute;
   top: -6rem;
@@ -33,4 +35,27 @@
   .navAccent .circle-flex-container {
     left: 5em;
   }
+}
+
+/* mobile pop-out menu only */
+.mobile-toggle-accent.circle-position-container {
+  z-index: 2;
+}
+
+.mobile-toggle-accent .circle-outmost {
+  display: block;
+}
+
+.mobile-toggle-accent .circle-bounding-box {
+  position: fixed;
+  width: 18rem;
+  height: 18rem;
+  right: -30%;
+  top: 85%;
+}
+
+.mobile-toggle-accent .circle-flex-container {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

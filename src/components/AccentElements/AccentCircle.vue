@@ -23,11 +23,13 @@ export default {
 /* NAV USE CASE CSS */
 @import "@/components/NavSection/navAccentCircle.css";
 
+/* HERO USE CASE CSS */
 .heroAccent .circle-bounding-box {
   position: relative;
   transform: translate(60%, -7%);
 }
 
+/* GENERAL CSS */
 .circle-position-container {
   position: relative;
   z-index: -100;

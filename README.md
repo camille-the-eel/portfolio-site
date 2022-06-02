@@ -27,6 +27,3 @@ npm run dev
 ```sh
 npm run build
 ```
-
-// "build": "vite build",
-webpack: npm run start
