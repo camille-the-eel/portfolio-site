@@ -27,6 +27,44 @@ const router = createRouter({
       name: "dev-work",
       component: () => import("../views/DevelopmentView.vue"),
     },
+    // Design feature pages
+    // ---------------------
+    {
+      path: "/designing/a-lobby-menu",
+      name: "lobby-menu",
+      component: () =>
+        import("../views/designWorkViews/LobbyMenuFeatureView.vue"),
+    },
+    {
+      path: "/designing/the-incision-logo",
+      name: "incision-logo",
+      component: () =>
+        import("../views/designWorkViews/IncisionLogoFeatureView.vue"),
+    },
+    {
+      path: "/designing/the-crown-room-brochure",
+      name: "the-crown-room-brochure",
+      component: () =>
+        import("../views/designWorkViews/CRBrochureFeatureView.vue"),
+    },
+    {
+      path: "/designing/a-passport-illustration",
+      name: "passport-illustration",
+      component: () =>
+        import("../views/designWorkViews/PassportIllustrationFeatureView.vue"),
+    },
+    {
+      path: "/designing/passport-stamps",
+      name: "passport-stamps",
+      component: () =>
+        import("../views/designWorkViews/PassportStampsFeatureView.vue"),
+    },
+    {
+      path: "/designing/grand-opening-layouts",
+      name: "grand-opening-layouts",
+      component: () =>
+        import("../views/designWorkViews/GrandOpeningFeatureView.vue"),
+    },
   ],
 });
 

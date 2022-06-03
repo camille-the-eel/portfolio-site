@@ -14,6 +14,7 @@
     <h6 class="project-h6">{{ projectTags }}</h6>
     <h1 class="project-h1">{{ project.title }}</h1>
     <p class="project-p">{{ project.description }}</p>
+    <p class="project-year">{{ project.dateYear }}</p>
     <a :href="project.githubURL" class="project-link"
       ><ArrowCircleRightIcon class="project-icon" />click here to read my code
       on Github</a
@@ -80,6 +81,11 @@ export default {
 
 .project-p {
   font-weight: 300;
+  margin-bottom: 0.6rem;
+}
+
+.project-year {
+  font-weight: 800;
   margin-bottom: 2.3rem;
 }
 

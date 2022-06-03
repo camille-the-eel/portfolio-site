@@ -1,8 +1,8 @@
 <template>
-  <div class="page-head">
+  <div class="dev-page-head">
     <PageHeader pageCategory="WEB DEVELOPMENT" pageTitle="PROJECTS" />
   </div>
-  <div class="page-content">
+  <div class="dev-page-content">
     <DevProjectContainer :devProjects="devProjects" />
   </div>
   <TheResume />
@@ -13,9 +13,9 @@
 import PageHeader from "@/components/PageHeader.vue";
 import DevProject from "@/components/DevSection/DevProject.vue";
 import TheResume from "@/components/ResumeSection/TheResume.vue";
-import DevProjectContainer from "../components/DevSection/DevProjectContainer.vue";
+import DevProjectContainer from "@/components/DevSection/DevProjectContainer.vue";
 
-// IMAGES FOR STATE DATA
+// IMAGE PATHS FOR STATE DATA
 import pathPortfolio from "@/assets/devAssets/portfolio-thumbnail_portfolio.png";
 import pathCocktail from "@/assets/devAssets/portfolio-thumbnail_cocktailRoulette.png";
 
@@ -59,11 +59,12 @@ export default {
 </script>
 
 <style>
-.page-head {
+.dev-page-head {
+  margin-top: 1rem;
   margin-bottom: 4rem;
 }
 
-.page-content {
+.dev-page-content {
   max-width: 100%;
   overflow: hidden;
 }

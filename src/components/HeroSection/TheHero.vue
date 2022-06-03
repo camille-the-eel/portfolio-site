@@ -49,7 +49,7 @@ import AccentRules from "@/components/AccentElements/AccentRules.vue";
   font-weight: 300;
   margin-bottom: 7rem;
   margin-left: 6vw;
-  margin-top: 2vh;
+  margin-top: 3vh;
   margin-right: 4rem;
 }
 
