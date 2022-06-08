@@ -70,8 +70,8 @@ footer {
   height: 0.2rem;
   background: repeating-linear-gradient(
     to right,
-    var(--color-accent-medium-dark) 0,
-    var(--color-accent-medium-dark) 1.2rem,
+    var(--color-accent-mediumk) 0,
+    var(--color-accent-medium) 1.2rem,
     transparent 1.2rem,
     transparent 2.2rem
   );

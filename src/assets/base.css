@@ -14,7 +14,8 @@
 :root {
   --color-text: #363434;
   --color-accent-dark: #363434;
-  --color-accent-medium-dark: #7b7b7b;
+  --color-accent-medium-dark: #4b4848;
+  --color-accent-medium: #7b7b7b;
   --color-accent-medium-light: #999898;
   --color-accent-light: #d8d8d8;
 }

@@ -40,13 +40,13 @@ h6 {
 .plus-icon {
   width: 2rem;
   margin: 1.5rem 0 3rem 0;
-  fill: var(--color-accent-medium-dark);
+  fill: var(--color-accent-medium);
 }
 
 .bottom-accent {
   width: 100%;
   height: 1.2rem;
-  background-color: var(--color-accent-medium-dark);
+  background-color: var(--color-accent-medium);
 }
 
 .dark.hero-header-box {

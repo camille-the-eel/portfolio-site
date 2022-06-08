@@ -1,9 +1,9 @@
 <template>
   <div class="dev-page-head">
-    <PageHeader pageCategory="WEB DEVELOPMENT" pageTitle="PROJECTS" />
+    <PageHeader page-category="WEB DEVELOPMENT" page-title="PROJECTS" />
   </div>
   <div class="dev-page-content">
-    <DevProjectContainer :devProjects="devProjects" />
+    <DevProjectContainer :dev-projects="devProjects" />
   </div>
   <TheResume />
 </template>

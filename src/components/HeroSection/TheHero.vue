@@ -16,18 +16,18 @@ import AccentRules from "@/components/AccentElements/AccentRules.vue";
         <HeroHeader
           class="dark"
           href="/development"
-          subHeader="JAVASCRIPT, VUE, HTML, CSS, APIs"
-          mainHeaderLine1="WEB"
-          mainHeaderLine2="DEVELOPMENT"
+          sub-header="JAVASCRIPT, VUE, HTML, CSS, APIs"
+          main-header-line1="WEB"
+          main-header-line2="DEVELOPMENT"
         />
       </div>
       <div class="hero-header-wrapper main-item-1">
         <HeroHeader
           class="light"
           href="/design"
-          subHeader="LAYOUTS, LOGOS, STAMPS"
-          mainHeaderLine1="GRAPHIC"
-          mainHeaderLine2="DESIGN"
+          sub-header="LAYOUTS, LOGOS, STAMPS"
+          main-header-line1="GRAPHIC"
+          main-header-line2="DESIGN"
         />
       </div>
       <AccentCircle class="heroAccent" />
@@ -123,8 +123,8 @@ import AccentRules from "@/components/AccentElements/AccentRules.vue";
     width: 0.09em;
     background: repeating-linear-gradient(
       to top,
-      var(--color-accent-medium-dark) 0,
-      var(--color-accent-medium-dark) 0.625em,
+      var(--color-accent-medium) 0,
+      var(--color-accent-medium) 0.625em,
       transparent 0.75em,
       transparent 1.25em
     );

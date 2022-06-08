@@ -140,8 +140,8 @@
     width: 0.09em;
     background: repeating-linear-gradient(
       to top,
-      var(--color-accent-medium-dark) 0,
-      var(--color-accent-medium-dark) 0.625em,
+      var(--color-accent-medium) 0,
+      var(--color-accent-medium) 0.625em,
       transparent 0.75em,
       transparent 1.25em
     );

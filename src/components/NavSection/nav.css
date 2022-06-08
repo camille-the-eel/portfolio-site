@@ -123,15 +123,16 @@ a:hover.nav-item {
     font-weight: 400;
   }
 
-  a:active.circle,
-  a:visited.circle {
-    color: var(--color-text);
-  }
-
+  a.circle,
   a:link.circle,
   a:hover.circle {
     color: var(--color-accent-light);
     cursor: pointer;
+  }
+
+  a:active.circle,
+  a.router-link-active {
+    color: var(--color-text);
   }
 
   a:link.nav-item,
