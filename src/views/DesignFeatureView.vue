@@ -45,7 +45,6 @@ export default {
   created() {
     if (this.$route.params) {
       console.log("p", this.$route.params);
-      console.log("a", this.$attrs);
       this.workDetails = this.$attrs;
     }
   },
