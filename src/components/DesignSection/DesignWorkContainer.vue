@@ -12,8 +12,11 @@ export default {
   components: {
     DesignWork,
   },
-  props: {
-    designWork: Array,
+  computed: {
+    designWork() {
+      let designWork = this.$store.getters.getDesignWorkDetails;
+      return designWork;
+    },
   },
 };
 </script>

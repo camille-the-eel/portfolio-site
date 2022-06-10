@@ -1,58 +1,47 @@
-<!-- TODO: access props from route -->
-
+]
 <template>
   <PageHeader page-category="GRAPHIC DESIGN" page-title="WORK" />
-  <div v-bind="$attrs"></div>
-  <!-- TODO: DesignFeatureHeader here, using props passed from route -->
-  <!-- <div v-for="src in work.showcaseFilePaths" class="img-container">
-    <img :src="src" />
-  </div> -->
-  <!-- <img :src="work.showcaseFilePaths[0]" />
-  <img :src="work.showcaseFilePaths[1]" />
-  <img :src="work.showcaseFilePaths[2]" />
-  <img :src="work.showcaseFilePaths[3]" /> -->
+  <DesignFeatureHeader />
   <h3>{{ routeName }}</h3>
-  <h2>Hi {{ workDetails.thumbnailTitle }}</h2>
-  <img :src="path1" class="feature-img" />
-  <img :src="path2" class="feature-img" />
-  <img :src="path3" class="feature-img" />
-  <img :src="path4" class="feature-img" />
+  <h6>{{ work.showcaseTitle }}</h6>
+  <div
+    :key="src"
+    v-for="src in work.showcaseFilePaths"
+    class="showcase-img-container"
+  >
+    <img :src="src" class="showcase-imgs" />
+  </div>
 </template>
 
 <script>
 import PageHeader from "@/components/PageHeader.vue";
-
-import passport1 from "@/assets/designAssets/hg-passport/passport-showcase-1.jpg";
-import passport2 from "@/assets/designAssets/hg-passport/passport-showcase-2.jpg";
-import passport3 from "@/assets/designAssets/hg-passport/passport-showcase-3.jpg";
-import passport4 from "@/assets/designAssets/hg-passport/passport-showcase-4.jpg";
+import DesignFeatureHeader from "@/components/DesignSection/DesignFeatureHeader.vue";
 
 export default {
   name: "DesignFeatureView",
   components: {
     PageHeader,
+    DesignFeatureHeader,
   },
   props: ["routeName"],
-  data() {
-    return {
-      workDetails: {},
-      path1: passport1,
-      path2: passport2,
-      path3: passport3,
-      path4: passport4,
-    };
+  methods: {
+    workDetails(route) {
+      this.work = this.$store.getters.getFilteredWorkDetails(route);
+      // console.log(this.work);
+    },
   },
   created() {
-    if (this.$route.params) {
-      console.log("p", this.$route.params);
-      this.workDetails = this.$attrs;
-    }
+    this.workDetails(this.routeName);
   },
 };
 </script>
 
 <style>
-.feature-img {
+.showcase-img-container {
+  max-width: 80%;
+}
+
+.showcase-imgs {
   max-width: 80%;
   margin: 0 auto 3rem auto;
 }

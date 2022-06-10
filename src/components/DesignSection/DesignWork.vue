@@ -1,12 +1,9 @@
 <template>
-  <!-- TODO: design vs designing -->
   <RouterLink
-    :to="{ name: 'design-feature', params: { ...work } }"
+    :to="`/designing/${work.routeName}`"
     class="work-wrapper"
     :route-name="work.routeName"
   >
-    <!-- :to="{ path: `/designing/${work.routeName}`, params: { ...work } }" -->
-    <!-- :work-details="work.thumbnailTitle" -->
     <div class="work-image-container">
       <img :src="work.thumbnailFilePath" class="work-image" />
     </div>

@@ -1,9 +1,9 @@
 <template>
-  <h6>Header</h6>
+  <h1>Page not found. Go back.</h1>
 </template>
 
 <script>
 export default {
-  name: "DesignFeatureHeader",
+  name: "NotFoundView",
 };
 </script>
