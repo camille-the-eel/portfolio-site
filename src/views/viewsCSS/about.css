@@ -29,7 +29,7 @@
 
 .about-content > p {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
 }
 
 /* 0px and 324px */
@@ -42,7 +42,7 @@
 /* GRID SET UP FOR ALL SCREENS LARGER THAN 384PX -- NO MAX-WIDTH BOUNDARY FOR THESE SETTINGS  */
 @media (min-width: 24em) {
   .about-container {
-    /* overflow: hidden; */
+    overflow: hidden;
     text-align: left;
     width: 90%;
     display: grid;
@@ -76,15 +76,15 @@
   }
 
   .about-content > p {
-    margin: 0;
+    margin: 0 0 2rem 0;
   }
 
   .dashed-line {
     display: block;
     margin: 0 50%;
     height: 130%;
-    max-height: 22em;
     grid-area: overlay;
+    grid-column: 1/-4;
     z-index: -99;
 
     width: 0.09em;
@@ -127,13 +127,13 @@
 @media (min-width: 44.9999em) {
   .about-container {
     width: 80%;
-    grid-template-columns: 1.5fr 2fr 1fr;
+    grid-template-columns: 1.5fr 2fr 0.75fr;
     grid-template-rows: repeat(3, min-content);
     gap: 0.3em 1.875em;
   }
 
   .about-content {
-    max-width: 22em;
+    max-width: 30em;
   }
 }
 
@@ -159,9 +159,5 @@
 
   .about-content {
     max-width: 34em;
-  }
-
-  .dashed-line {
-    max-height: 25em;
   }
 }

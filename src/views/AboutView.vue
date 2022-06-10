@@ -14,9 +14,22 @@ import TheResume from "@/components/ResumeSection/TheResume.vue";
     </div>
     <div class="about-content">
       <p>
-        Lorem ipsum blandka difdnsak dsauifh abdu a aba idiue a jdua ndajfdhua
-        afjdk uau dskuwnda hduid fdsa duai fiueadka uia ahudu ad a ud ak nebeu
-        udsaj.
+        I've a varied mix of management, customer relations, design, and
+        development experience–which gives me a unique approach to problems, as
+        I try to consider all known facets and be thorough in my
+        decision-making.
+      </p>
+      <p>
+        I love the challenges coding provides, and the endless learning and
+        growth inherit to it. I'm a bootcamp and self-taught developer with a
+        litany of transferable skills and a strong desire to succeed (but that's
+        all in my resume, below).
+      </p>
+      <p>
+        I devour content, whether it's new tech knowledge, a niche anime, a
+        newly-found fantasy book, or an interesting new cocktail recipe to shake
+        up. And while I wouldn't say I'm always in the gym, fitness is important
+        to me, as is satisfying my insatiable sweet tooth.
       </p>
     </div>
     <div class="dashed-line"></div>
