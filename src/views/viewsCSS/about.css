@@ -32,6 +32,10 @@
   margin: 0 auto 2rem auto;
 }
 
+.candy {
+  font-size: 1.2rem;
+}
+
 /* 0px and 324px */
 @media (min-width: 0em) and (max-width: 18em) {
   .about-header > h1 {

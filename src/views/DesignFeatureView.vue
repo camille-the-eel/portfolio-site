@@ -1,15 +1,23 @@
 ]
 <template>
   <PageHeader page-category="GRAPHIC DESIGN" page-title="WORK" />
-  <DesignFeatureHeader />
-  <h3>{{ routeName }}</h3>
-  <h6>{{ work.showcaseTitle }}</h6>
-  <div
-    :key="src"
-    v-for="src in work.showcaseFilePaths"
-    class="showcase-img-container"
-  >
-    <img :src="src" class="showcase-imgs" />
+  <div class="feature-view-container">
+    <DesignFeatureHeader :work="work" />
+    <div class="showcase-img-container">
+      <div :key="src" v-for="src in work.showcaseFilePaths">
+        <img :src="src" class="showcase-imgs" />
+      </div>
+      <div
+        :key="work.additionalCredit.id"
+        v-for="entry in work.additionalCredit"
+        class="credit-container"
+      >
+        <p>
+          {{ entry.projectContribution }}
+          <a :href="entry.url">{{ entry.name }}</a>
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,12 +45,33 @@ export default {
 </script>
 
 <style>
+.feature-view-container {
+  margin-bottom: 10rem;
+}
+
 .showcase-img-container {
-  max-width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .showcase-imgs {
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+
+.credit-container {
   max-width: 80%;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto;
+}
+
+/* 512px */
+@media (min-width: 32em) {
+  .showcase-img-container {
+    max-width: 80%;
+  }
+
+  .credit-container {
+    max-width: 100%;
+  }
 }
 </style>
