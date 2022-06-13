@@ -35,6 +35,7 @@ export default {
 
 h6 {
   padding-right: 30px;
+  margin-bottom: 1rem;
 }
 
 .plus-icon {

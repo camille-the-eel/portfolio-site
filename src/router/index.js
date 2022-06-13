@@ -19,6 +19,11 @@ const router = createRouter({
       component: () => import("../views/AboutView.vue"),
     },
     {
+      path: "/resume",
+      name: "resume",
+      component: () => import("../views/ResumePDFView.vue"),
+    },
+    {
       path: "/design",
       name: "design-work",
       component: () => import("../views/DesignWorkView.vue"),
@@ -36,6 +41,9 @@ const router = createRouter({
     },
     { path: "/:notfound(.*)", name: "404", component: NotFoundView.vue },
   ],
+  scrollBehavior() {
+    document.getElementById("app").scrollIntoView({ behavior: "smooth" });
+  },
 });
 
 export default router;

@@ -36,7 +36,7 @@ export default {
 
 .design-page-content {
   max-width: 80%;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 10rem auto;
   overflow: hidden;
   display: grid;
   grid-template-columns: auto;
@@ -68,8 +68,9 @@ export default {
 /* 850px and up */
 @media (min-width: 53.125em) {
   .design-page-content {
-    max-width: 100%;
-    grid-template-columns: repeat(3, auto);
+    /* max-width: 100%;
+    grid-template-columns: repeat(3, auto); */
+    gap: 2em;
   }
 }
 </style>

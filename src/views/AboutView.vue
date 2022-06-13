@@ -4,7 +4,6 @@ import TheResume from "@/components/ResumeSection/TheResume.vue";
 
 <template>
   <div class="about-container">
-    <!-- <img class="avatar" src="/src/assets/headshot-cropped.png" /> -->
     <!-- <div class="avatar-wrapper"> -->
     <img class="avatar-img" src="/src/assets/headshot-crop-R.png" />
     <!-- </div> -->
@@ -14,16 +13,15 @@ import TheResume from "@/components/ResumeSection/TheResume.vue";
     </div>
     <div class="about-content">
       <p>
-        Hi! I'm Camille. I've a uniquely varied mix of experience in management,
-        customer relations, design, and development–now I'm pursuing a career
-        change into software development.
-        <!-- –which gives me a unique approach to problems, as I try to consider all known facets and be thorough in my decision-making. -->
+        Hi! I'm Camille. I have a uniquely varied mix of experience in
+        management, customer relations, design, and development–now I'm pursuing
+        a career change into software development.
       </p>
       <p>
         I love the challenges coding provides, and the endless learning and
         growth inherit to it. I'm a bootcamp and self-taught developer with a
         litany of transferable skills and a strong desire to succeed (but that's
-        all in my resume, below).
+        all in my resume, linked below).
       </p>
       <p>
         I devour content, whether it's new tech knowledge, a niche anime, a

@@ -7,7 +7,7 @@
       <h6 class="work-feature-client">CLIENT: {{ work.client }}</h6>
       <h1 class="work-feature-header">{{ work.showcaseTitle }}</h1>
       <p class="work-feature-details">
-        {{ work.description }} &#169;{{ work.dateYear }}
+        {{ work.description }}<br /><br />&#169;{{ work.dateYear }}
       </p>
       <p class="work-feature-tags">{{ workFeatureTags }}</p>
     </div>
@@ -31,7 +31,7 @@ export default {
 <style scoped>
 .work-feature-header-container {
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 .work-feature-content {
   max-width: 70%;

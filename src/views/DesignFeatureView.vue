@@ -5,7 +5,7 @@
     <DesignFeatureHeader :work="work" />
     <div class="showcase-img-container">
       <div :key="src" v-for="src in work.showcaseFilePaths">
-        <img :src="src" class="showcase-imgs" />
+        <img :src="src" :class="['showcase-imgs', routeName]" />
       </div>
       <div
         :key="work.additionalCredit.id"
@@ -14,7 +14,11 @@
       >
         <p>
           {{ entry.projectContribution }}
-          <a :href="entry.url">{{ entry.name }}</a>
+          <a :href="entry.url"
+            ><b>
+              {{ entry.name }}
+            </b>
+          </a>
         </p>
       </div>
     </div>
@@ -62,6 +66,10 @@ export default {
 .credit-container {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.the-incision-logo {
+  margin-bottom: 15rem;
 }
 
 /* 512px */
